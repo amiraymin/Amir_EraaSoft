@@ -1,180 +1,57 @@
-Session 1 TakeAways
-Absolutely! I kept your notes as close as possible to what you wrote. I only fixed obvious spelling mistakes where I was confident. Anything that was unclear, I left as close to your original wording as possible.
-
----
-
-# Thoughts
-
-## Flutter
-
-* Mobile
-
-* Web
-
-* Desktop
-
-* There are a lot of courses. It is fully complete.
-
-* The effort is more important than the course itself.
-
----
-
-# EraaSoft (2026-07-19)
-
-* GPA in the course
-* Workshops
-* Eraa Camps
-* Job Day Simulation
-* GBP → Eraa Graduation Project
-* Diploma = Modules + Workshop
-
-### GPA =
-
-* Attendance
-* Tasks
-* Performance
-
-If GPA is above **90%** → Advanced.
-
-Implement based on **real projects**.
-
-### Courses
-
-* Workshop: First week in every month.
-* Camp: Simulate company projects.
-* Job Day.
-
----
-
-## Eraa Impact
-
-**My App**
-
-* Application for specific notifications.
-* On social media, form specific pages to avoid distraction.
-
----
-
-# 2026-07-19
-
-## Git & GitHub
-
----
-
-# 2026-07-20
-
-## Operating Systems (OS)
-
-### CPU
-
-* ALU
-* RAM
-* ROM
-
-### New info
-
-* ALU does calculations.
-* ALU = Arithmetic Logic Unit.
-
-### Storage
-
-* RAM = Temporary memory.
-* ROM = Permanent memory.
-
-### Task (Optional)
-
-The cycle between:
-
-* CPU
-* RAM
-* ROM
-
-Each CPU from different companies has different architectures, so that's why we develop Operating Systems for:
-
-* Android
-* Linux
-* Windows
-
-The OS has a compiler to translate my code into machine language.
-
----
-
-## Before Flutter
-
-They used **WebView**, so it looked like a mobile app.
-
-Then **Ionic** came up as a framework for mobile, but its performance was bad.
-
----
-
-# What is a Framework?
-
-A framework came up to make the process of writing code easier.
-
----
-
-## Android
-
-* Google bought Android in **2005**.
-* Android used **Java** as its language.
-* In **2017**, Google announced **Kotlin**, which is easier than Java.
-* Kotlin is native like Java.
-
-Java deals with hardware, so any mistake can harm or damage the hardware.
-
----
-
-## iOS
-
-Previously used:
-
-* Objective-C
-
-Now uses:
-
-* Swift (easier)
-
-Swift is a native language.
-
----
-
-## React Native
-
-In **2011**, Facebook came up with **React Native**.
-
-React was originally a framework for front-end developers,
- making it easier to build websites instead of writing complex JavaScript manually.
-
-React Native uses:
-
-* JavaScript
-* Works for:
-
-  * Android
-  * iOS
-
-(Android → Kotlin)
-
-(iOS → Swift)
-
----
-
-## Flutter
-
-Released in **2017** by Google.
-
-* Cross-platform.
-* High performance.
-
-### Features
-
-* Hot Reload.
-* Easy to code.
-* It is just for the UI, not the full app.
-* Dart deals with the data and the rest of the process.
-
----
-
-
-
-
+----------------
+Session 1 Notes 
+NOT AI GENERATED
+----------------
+1. OS cycle 
+hardware -> OS -> Application -> user 
+
+2. Hardware 
+like CPU 
+  CPU contains ALU method which can do the calculations stuff 
+  ALU : Arithmetic Logic Unit
+& RAM : Random access memory
+& ROM : Read only memory (Permanent)
+
+* CPU understand only 0 & 1 
+* Every CPU build with different architecture [x86, x64, ARM]
+  SO we build Operating Systems to support these architectures
+   Like [Linux, Windows, Android, iOS]
+* Operating systems support many programming languages
+Windows -> C, C++, C#
+Linux   -> C, C++
+Android -> Java, Kotlin
+iOS     -> Objective-C, Swift
+macOS   -> Objective-C, Swift
+
+* code cycle
+  source code -> compiler -> machineCode 
+
+* Type of compilers
+ just In Time compiler (JIT)
+ ahead Of Time compiler (AOT)
+
+3. Before Flutter
+  Programers used 
+  [WebView apps, native languages, frameworks like Ionic] to make mobile apps 
+  now native languages hard to code 
+  Ionic Framework has lower performance than native (JAVA & Kotlin)
+  
+
+4. Flutter Framework 
+  what is Framework ?
+    Framework make it easier to type repetitive code by adding some libraries 
+    
+  In 2005 Google bought Android Inc using JAVA to develop it 
+  JAVA   : deals with hardware more like system APIs
+   Doing mistakes may harm the phone like battery 
+
+  Kotlin : more modern language for Android development made by JetBrains company
+
+  In the other hand, Apple developed 'Objective C' Then 'Swift'
+
+  Facebook introduced React in 2013 to build websites (native language + faster)
+  Facebook introduced ReactNative in 2015 to build mobile apps (slower performance than native because 'bridges') 
+  New framework 
+  Flutter (2017) by Google using Dart
+  Advantages [cross platform, High performance, easier code, better UI]
+  Dart deals with [interaction, data, logic]
