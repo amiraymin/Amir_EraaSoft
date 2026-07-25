@@ -1,3 +1,5 @@
+// ignore_for_file: unused_local_variable
+
 void main() {
   // Q1 : create a variable called hour and assign your current hour to it
   double hour = 8.50;
