@@ -82,10 +82,8 @@ void main() {
         print("Second Student : ${students[i]}");
       case 2:
         print("Second Student : ${students[i]}");
-      
       case 3:
         print("Second Student : ${students[i]}");
-        break;
       default:
         print("invalid index");
     }
