@@ -11,6 +11,7 @@ void main() {
       print(i);
     }
   }
+
   /*
     //////////////////////////// Task 2 ///////////////////////////////
     Looping over a List Given List<String> 
@@ -67,7 +68,7 @@ void main() {
   }
 
   print(largest);
-  
+
   /*
     ////////////////////////////// Task 6 ///////////////////////////////
     List + Map together Given:
@@ -78,7 +79,7 @@ void main() {
      Calculate the total cost (price * qty for each item, summed),
      and also print the name of the item with the highest total cost.
   */
- 
+
   List<Map<String, dynamic>> products = [
     {'name': 'Book', 'price': 40, 'qty': 2},
     {'name': 'Pen', 'price': 5, 'qty': 10},
@@ -104,3 +105,13 @@ void main() {
   print('Total price $total');
   print('Total Cost: $totalCost');
 }
+
+/*
+ NOTE FOR ME :
+  The map value type is dynamic,
+  which means Dart does not know that hte item['price'] is an integer.
+  It could be a number or string or something else
+  So we useds "as int" 
+  */
+// would you tell us your story with learning english
+   
