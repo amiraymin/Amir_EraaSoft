@@ -1,4 +1,4 @@
-import 'dart:math';
+
 
 void main() {
   rectangleArea(15, 5); // Task 1
@@ -19,8 +19,8 @@ void main() {
 void rectangleArea(int Length, int Width) {
   print("Rectangle Area =  ${Length * Width}");
 }
-
 // ==================================================
+
 
 // ==================================================
 // Task 2: Palindrome Checker
@@ -47,6 +47,12 @@ bool isPalindrome(String text) {
     return false;
   }
 }
+/////////////////////////////////////////////////////
+/////////////////  Mentor Feedback   ////////////////
+/////////////////////////////////////////////////////
+/*
+Q2.. saerch about .Split & reversed in String built in methods... it can be better
+*/
 // ==================================================
 
 // ==================================================
@@ -78,7 +84,6 @@ String userProfile({required String name, int age = 404, String city = "404"}) {
 // - Use it twice:
 //   • Filter even numbers.
 //   • Filter numbers greater than 10.
-//
 
   List<int> filterNumbers(List<int> nums,bool Function(int) test) {
   List<int> result = [];
@@ -91,4 +96,11 @@ String userProfile({required String name, int age = 404, String city = "404"}) {
   }
   return result;
 }
+/////////////////////////////////////////////////////
+/////////////////  Mentor Feedback   ////////////////
+/////////////////////////////////////////////////////
+/*
+good job Amir you did very well to finish the task correctly thank you so much for your effort..
+about Q4... search about ,where in list , it can be better 
+*/
 // ==================================================
