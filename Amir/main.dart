@@ -61,6 +61,7 @@ void main() {
 // polymorphism
   // polymorphism is an OOP concept that allows us to use a subclass object as a superclass object.
   // In this example, the class student is a subclass of the class User,
+  // ignore: unused_local_variable
   User st1 = student(
     name: "khaled",
     email: "email@ example.com",

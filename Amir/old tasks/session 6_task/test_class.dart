@@ -1,4 +1,4 @@
-import 'class session 6.dart';
+import 'session 6_task.dart';
 
 void main() {
   Person firstPerson = Person("Tamer", 55, "Cairo");
