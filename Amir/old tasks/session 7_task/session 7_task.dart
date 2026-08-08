@@ -1,4 +1,4 @@
-//////////////////////////////////////////
+//////////////// Task 1 //////////////////
 class Car {
   String? brand;
   String? model;
@@ -9,7 +9,7 @@ class Car {
   displayInfo() => print("Brand: $brand - Model: $model - Year: $year");
 }
 
-//////////////////////////////////////////
+//////////////// Task 2 //////////////////
 class Student {
   String? name;
   int? age;
@@ -21,15 +21,16 @@ class Student {
   showInfo() => print("Student $name Age: $age Grade: $grade");
 }
 
-//////////////////////////////////////////
+//////////////// Task 3 //////////////////
 class BankAccount {
   double? _balance;
 
   set balance(double balance) {
     if (balance > 0) {
       _balance = balance;
-    } else
+    } else {
       print("Invalid balance");
+    }
   }
 
   get balance {
@@ -37,92 +38,54 @@ class BankAccount {
   }
 }
 
-//////////////////////////////////////////
+//////////////// Task 4 //////////////////
 class Animal {
   String? name;
-
   makeSound() {}
 }
 
 class Dog extends Animal {
   @override
   makeSound() {
-    print("Woof");
+    print("Dog: Woof");
   }
 }
 
 class Cat extends Animal {
   @override
   makeSound() {
-    print("Meow");
+    print("cat: Meow");
   }
 }
-
-///////////////////////////////////////
-/**Task 5 — Constructors with Inheritance
-Create a parent class called Person.
-Properties:
-name
-age
-Constructor initializes both properties.
-Create a child class called Employee.
-Additional Property:
-salary
-
-Use super to initialize the parent properties.
-Create a function displayInfo() that prints:
-Name
-Age
-Salary */
+//////////////// Task 5 //////////////////
 class Person {
-  String? name;
-  int? age;
+  String name;
+  int age;
 
-  Person(this.age, this.name);
+  Person(this.name, this.age);
   displayInfo() {
     print("Name: $name Age: $age");
   }
 }
 
 class Employee extends Person {
-  int? salary;
+  int salary;
 
   Employee(super.age, super.name, this.salary);
+
+  @override
   displayInfo() {
     print("Name: $name Age: $age Salary: $salary");
   }
 }
-
-/**Task 6 — Final Challenge (Encapsulation + Inheritance + Constructors)
-Create a simple Library Management System.
-
-
-
-Constructor initializes both.
-
-
-Additional private property:
-_isBorrowed
-Functions:
-
-Rules:
-A borrowed book cannot be borrowed again.
-A returned book cannot be returned twice.
-Example Output:
-Book: Flutter Basics
-Author: John
-
-Borrowed successfully.
-This book is already borrowed.
-Book returned successfully.
-Current Status: Available */
- class Book {
+//////////////// Task 6 //////////////////
+class Book {
   String title;
   String author;
   Book(this.title, this.author);
-  borrowBook(){}
-  returnBook(){}
-  getStatus(){}
+  borrowBook() {}
+  returnBook() {}
+  getStatus() {}
 }
 
 class BorrowedBook extends Book {
@@ -130,6 +93,7 @@ class BorrowedBook extends Book {
 
   BorrowedBook(super.title, super.author);
 
+   @override
   borrowBook() {
     if (_isBorrowed == false) {
       print("Borrowed successfully");
@@ -139,13 +103,15 @@ class BorrowedBook extends Book {
     }
   }
 
+   @override
   returnBook() {
     if (_isBorrowed == true) {
       print("Book returned successfully");
       _isBorrowed = false;
-    } 
+    }
   }
 
+   @override
   getStatus() {
     if (_isBorrowed == false) {
       print("Current Status: Available");

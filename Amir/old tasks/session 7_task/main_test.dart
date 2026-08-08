@@ -20,7 +20,7 @@ void main() {
   Animal d = Dog();
   d.makeSound();
   ///////////////////////////////////////
-  Person one = Employee(23, "amir", 2300);
+  Person one = Employee("amir",23,  2300);
   one.displayInfo();
   ///////////////////////////////////////
   Book b1 = BorrowedBook("title", "author");
